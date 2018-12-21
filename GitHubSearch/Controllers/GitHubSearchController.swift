@@ -15,20 +15,8 @@ class GitHubSearchController: UITableViewController, UISearchBarDelegate {
   
   private let cellId = "cellId"
   
-  private let searchController: UISearchController = {
-    let sc = UISearchController(searchResultsController: nil)
-    sc.searchBar.barStyle       = .black
-    sc.searchBar.tintColor      = .white
-    return sc
-  }()
-  
-  private let pullToSearchLabel: UILabel = {
-    let label           = UILabel()
-    label.frame         = CGRect(x: 0, y: 0, width: 250, height: 50)
-    label.text          = "Pull to search"
-    label.textAlignment = .center
-    return label
-  }()
+  private let searchController  = UISearchController.searchController
+  private let pullToSearchLabel = UILabel.pullToSearchLabel
   
   
   // MARK: - Controller Lifecycle

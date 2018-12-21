@@ -10,7 +10,6 @@ import UIKit
 
 class GitHubSearchCell: UITableViewCell {
   
-  
   // MARK: - Properties
   var result: Item? {
     didSet {
@@ -20,20 +19,8 @@ class GitHubSearchCell: UITableViewCell {
     }
   }
   
-  let nameLabel: UILabel = {
-    let label   = UILabel()
-    label.font  = UIFont.boldSystemFont(ofSize: 14)
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
-  let descriptionLabel: UILabel = {
-    let label         = UILabel()
-    label.font        = UIFont.systemFont(ofSize: 14)
-    label.textColor   = .darkGray
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
+  private let nameLabel        = UILabel.createLabelWith(font: .boldSystemFont(ofSize: 14))
+  private let descriptionLabel = UILabel.createLabelWith(font: .systemFont(ofSize: 14), textColor: .darkGray)
   
   
   // MARK: - Object Lifecycle

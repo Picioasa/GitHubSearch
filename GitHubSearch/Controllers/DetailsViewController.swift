@@ -27,43 +27,12 @@ class DetailsViewController: UIViewController {
     }
   }
   
-  let userProfileImage: UIImageView = {
-    let iv                = UIImageView()
-    iv.clipsToBounds      = true
-    iv.contentMode        = .scaleAspectFill
-    iv.layer.cornerRadius = 30 // Half of the image's width
-    iv.translatesAutoresizingMaskIntoConstraints = false
-    return iv
-  }()
+  private let userProfileImage  = UIImageView.userProfileImage
   
-  let usernameLabel: UILabel = {
-    let label   = UILabel()
-    label.font  = UIFont.boldSystemFont(ofSize: 16)
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
-  let forksCountLabel: UILabel = {
-    let label            = UILabel()
-    label.font           = UIFont.systemFont(ofSize: 14)
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
-  let issuesCountLabel: UILabel = {
-    let label            = UILabel()
-    label.font           = UIFont.systemFont(ofSize: 14)
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
-  let descriptionLabel: UILabel = {
-    let label            = UILabel()
-    label.numberOfLines  = 0
-    label.font           = UIFont.systemFont(ofSize: 14)
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
+  private let usernameLabel     = UILabel.createLabelWith(font: .boldSystemFont(ofSize: 16))
+  private let forksCountLabel   = UILabel.createLabelWith(font: .systemFont(ofSize: 14))
+  private let issuesCountLabel  = UILabel.createLabelWith(font: .systemFont(ofSize: 14))
+  private let descriptionLabel  = UILabel.createLabelWith(font: .systemFont(ofSize: 14))
   
   
   // MARK: - Controller Lifecycle

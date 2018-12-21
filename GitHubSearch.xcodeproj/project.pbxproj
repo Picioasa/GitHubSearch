@@ -16,6 +16,8 @@
 		6B2CF90F21CD2429003C5B5C /* GitHubSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF90E21CD2429003C5B5C /* GitHubSearchCell.swift */; };
 		6B2CF91121CD2679003C5B5C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF91021CD2679003C5B5C /* DetailsViewController.swift */; };
 		6B2CF91321CD2E35003C5B5C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF91221CD2E35003C5B5C /* UIImageView.swift */; };
+		6B2CF91521CD678C003C5B5C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF91421CD678C003C5B5C /* UILabel.swift */; };
+		6B2CF91821CD69BB003C5B5C /* UISearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF91721CD69BB003C5B5C /* UISearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6B2CF90E21CD2429003C5B5C /* GitHubSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchCell.swift; sourceTree = "<group>"; };
 		6B2CF91021CD2679003C5B5C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		6B2CF91221CD2E35003C5B5C /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		6B2CF91421CD678C003C5B5C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		6B2CF91721CD69BB003C5B5C /* UISearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				6B2CF91221CD2E35003C5B5C /* UIImageView.swift */,
+				6B2CF91421CD678C003C5B5C /* UILabel.swift */,
+				6B2CF91721CD69BB003C5B5C /* UISearchController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,7 +197,9 @@
 				6B2CF91321CD2E35003C5B5C /* UIImageView.swift in Sources */,
 				6B2CF90D21CD2242003C5B5C /* JSONModel.swift in Sources */,
 				6B2CF8F421CD0F09003C5B5C /* GitHubSearchController.swift in Sources */,
+				6B2CF91821CD69BB003C5B5C /* UISearchController.swift in Sources */,
 				6B2CF90F21CD2429003C5B5C /* GitHubSearchCell.swift in Sources */,
+				6B2CF91521CD678C003C5B5C /* UILabel.swift in Sources */,
 				6B2CF8F221CD0F09003C5B5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
