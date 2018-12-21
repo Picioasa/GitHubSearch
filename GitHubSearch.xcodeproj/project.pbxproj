@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		6B2CF8F221CD0F09003C5B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF8F121CD0F09003C5B5C /* AppDelegate.swift */; };
-		6B2CF8F421CD0F09003C5B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF8F321CD0F09003C5B5C /* ViewController.swift */; };
-		6B2CF8F721CD0F09003C5B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2CF8F521CD0F09003C5B5C /* Main.storyboard */; };
+		6B2CF8F421CD0F09003C5B5C /* GitHubSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF8F321CD0F09003C5B5C /* GitHubSearchController.swift */; };
 		6B2CF8F921CD0F0C003C5B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2CF8F821CD0F0C003C5B5C /* Assets.xcassets */; };
 		6B2CF8FC21CD0F0C003C5B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2CF8FA21CD0F0C003C5B5C /* LaunchScreen.storyboard */; };
+		6B2CF90A21CD1A8A003C5B5C /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF90921CD1A8A003C5B5C /* CustomNavigationController.swift */; };
+		6B2CF90D21CD2242003C5B5C /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF90C21CD2242003C5B5C /* JSONModel.swift */; };
+		6B2CF90F21CD2429003C5B5C /* GitHubSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF90E21CD2429003C5B5C /* GitHubSearchCell.swift */; };
+		6B2CF91121CD2679003C5B5C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF91021CD2679003C5B5C /* DetailsViewController.swift */; };
+		6B2CF91321CD2E35003C5B5C /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2CF91221CD2E35003C5B5C /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6B2CF8EE21CD0F09003C5B5C /* GitHubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2CF8F121CD0F09003C5B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B2CF8F321CD0F09003C5B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6B2CF8F621CD0F09003C5B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B2CF8F321CD0F09003C5B5C /* GitHubSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchController.swift; sourceTree = "<group>"; };
 		6B2CF8F821CD0F0C003C5B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B2CF8FB21CD0F0C003C5B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B2CF8FD21CD0F0C003C5B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B2CF90921CD1A8A003C5B5C /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		6B2CF90C21CD2242003C5B5C /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		6B2CF90E21CD2429003C5B5C /* GitHubSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchCell.swift; sourceTree = "<group>"; };
+		6B2CF91021CD2679003C5B5C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6B2CF91221CD2E35003C5B5C /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		6B2CF8F021CD0F09003C5B5C /* GitHubSearch */ = {
 			isa = PBXGroup;
 			children = (
+				6B2CF90721CD1150003C5B5C /* Controllers */,
+				6B2CF90821CD1A66003C5B5C /* Views */,
+				6B2CF90B21CD222D003C5B5C /* Models */,
+				6B2CF90521CD1130003C5B5C /* Extensions */,
+				6B2CF90621CD1139003C5B5C /* Supporting Files */,
+			);
+			path = GitHubSearch;
+			sourceTree = "<group>";
+		};
+		6B2CF90521CD1130003C5B5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B2CF91221CD2E35003C5B5C /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B2CF90621CD1139003C5B5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				6B2CF8F121CD0F09003C5B5C /* AppDelegate.swift */,
-				6B2CF8F321CD0F09003C5B5C /* ViewController.swift */,
-				6B2CF8F521CD0F09003C5B5C /* Main.storyboard */,
 				6B2CF8F821CD0F0C003C5B5C /* Assets.xcassets */,
 				6B2CF8FA21CD0F0C003C5B5C /* LaunchScreen.storyboard */,
 				6B2CF8FD21CD0F0C003C5B5C /* Info.plist */,
 			);
-			path = GitHubSearch;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B2CF90721CD1150003C5B5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B2CF8F321CD0F09003C5B5C /* GitHubSearchController.swift */,
+				6B2CF91021CD2679003C5B5C /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6B2CF90821CD1A66003C5B5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B2CF90E21CD2429003C5B5C /* GitHubSearchCell.swift */,
+				6B2CF90921CD1A8A003C5B5C /* CustomNavigationController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B2CF90B21CD222D003C5B5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B2CF90C21CD2242003C5B5C /* JSONModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +176,6 @@
 			files = (
 				6B2CF8FC21CD0F0C003C5B5C /* LaunchScreen.storyboard in Resources */,
 				6B2CF8F921CD0F0C003C5B5C /* Assets.xcassets in Resources */,
-				6B2CF8F721CD0F09003C5B5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B2CF8F421CD0F09003C5B5C /* ViewController.swift in Sources */,
+				6B2CF90A21CD1A8A003C5B5C /* CustomNavigationController.swift in Sources */,
+				6B2CF91121CD2679003C5B5C /* DetailsViewController.swift in Sources */,
+				6B2CF91321CD2E35003C5B5C /* UIImageView.swift in Sources */,
+				6B2CF90D21CD2242003C5B5C /* JSONModel.swift in Sources */,
+				6B2CF8F421CD0F09003C5B5C /* GitHubSearchController.swift in Sources */,
+				6B2CF90F21CD2429003C5B5C /* GitHubSearchCell.swift in Sources */,
 				6B2CF8F221CD0F09003C5B5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6B2CF8F521CD0F09003C5B5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B2CF8F621CD0F09003C5B5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6B2CF8FA21CD0F0C003C5B5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22CH9YE8L;
-				INFOPLIST_FILE = GitHubSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GitHubSearch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M22CH9YE8L;
-				INFOPLIST_FILE = GitHubSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GitHubSearch/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
