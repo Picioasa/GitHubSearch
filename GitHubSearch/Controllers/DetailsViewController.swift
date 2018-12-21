@@ -66,16 +66,20 @@ class DetailsViewController: UIViewController {
   }()
   
   
+  // MARK: - Controller Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    view.backgroundColor = .white
-
+    setupVC()
     addSubviews()
   }
   
   
   // MARK: - Private Methods
+  private func setupVC() {
+    view.backgroundColor = .white
+    navigationController?.navigationBar.tintColor = .white
+  }
+  
   private func addSubviews() {
     view.addSubview(userProfileImage)
     view.addSubview(usernameLabel)

@@ -29,8 +29,8 @@ class GitHubSearchCell: UITableViewCell {
   
   let descriptionLabel: UILabel = {
     let label         = UILabel()
-    label.textColor   = .darkGray
     label.font        = UIFont.systemFont(ofSize: 14)
+    label.textColor   = .darkGray
     label.translatesAutoresizingMaskIntoConstraints = false
     return label
   }()

@@ -76,17 +76,17 @@ class GitHubSearchController: UITableViewController, UISearchBarDelegate {
       
       let decoder = JSONDecoder()
       decoder.keyDecodingStrategy = .convertFromSnakeCase
-      
+
       do {
         let decodedData = try decoder.decode(Result.self, from: fetchedData)
-        
+
         self.searchResults = decodedData.items
-        
+
         DispatchQueue.main.async {
           self.pullToSearchLabel.isHidden = true
           self.tableView.reloadData()
         }
-        
+
       } catch let jsonErr {
         print("Failed to decode json:", jsonErr)
       }
@@ -117,10 +117,6 @@ extension GitHubSearchController {
     navigationController?.pushViewController(detailsController, animated: true)
   }
 }
-
-
-
-
 
 
 
