@@ -1,5 +1,4 @@
 # GitHubSearch
-Search for GitHub repositories
 
 - #### *Search for repositories on GitHub*
 
